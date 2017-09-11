@@ -35,6 +35,7 @@ var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
         }
         
         elem.play();
+        ga('send', 'event', "video", "play");
         
         
     });
