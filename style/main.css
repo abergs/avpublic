@@ -1,0 +1,299 @@
+.body {
+  background: black;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Lato;
+}
+#logo,
+#logo-white {
+  background: url("../img/logo-dark.png") no-repeat;
+  background-size: 47.4px 21px;
+  width: 47.4px;
+  height: 21px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  transition-timing-function: ease;
+}
+#logo-white {
+  background-image: url("../img/logo-white.png");
+}
+#mobile-nav-btn {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 48px;
+  height: 22px;
+  background: #333;
+  background: url(../img/menu.png) no-repeat center center;
+  background-size: 48px 22px;
+  display: none;
+  z-index: 101;
+}
+#mobile-nav {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: white;
+  z-index: 102;
+  display: none;
+}
+#mobile-nav .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#mobile-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+#mobile-nav li {
+  display: block;
+}
+#mobile-nav li a {
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  text-decoration: none;
+}
+#menu {
+  z-index: 100;
+  top: 20px;
+  position: fixed;
+  transform: translateX(-50%);
+  left: 50%;
+}
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#menu li {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+#menu li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+#menu li a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+#menu li:hover {
+  border-bottom: 1px solid #333;
+  border-color: inherit;
+}
+#cta {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  color: white;
+  background: #333;
+}
+#cta:hover {
+  color: #333;
+  background: white;
+}
+#cta a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  padding: 10px 20px;
+}
+#cta a:hover {
+  text-decoration: none;
+}
+.fp {
+  width: 100vw;
+  height: 100vh;
+}
+.black-space {
+  height: 50vh;
+}
+.plaxEl {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playbtn {
+  color: #e0e0e0;
+  padding: 10px 40px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform-origin: 50%;
+}
+.playbtnzoom {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 25%;
+}
+.playbtndecoy {
+  visibility: hidden;
+}
+.title {
+  background: url("../img/htitle-inverted.png") no-repeat center center;
+  background-size: 30%;
+  z-index: 101;
+  position: absolute;
+}
+.title2 {
+  font-family: "Lato";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: url("https://www.hdwallpapers.net/previews/3d-colorful-spiral-1057.jpg") 10%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title2container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.titlesvg {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.trailerplayer {
+  display: none;
+}
+.trailerplayer.show {
+  visibility: visible;
+}
+#trailer-section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.trailer-text {
+  display: block;
+}
+.trailer-icon {
+  margin-bottom: 20px;
+  width: 70px;
+}
+#social {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 90;
+  bottom: 20px;
+  right: 20px;
+  text-transform: uppercase;
+}
+#social .social-white {
+  position: absolute;
+  left: 0;
+}
+#social a {
+  margin: 0 7px;
+  position: relative;
+}
+@media only screen and (max-width: 760px) {
+  #social {
+    display: flex;
+    right: 20px;
+    left: 20px;
+  }
+  #social span {
+    margin-right: auto;
+  }
+  #social .social-white {
+    opacity: 1 !important;
+  }
+  .trailer-text {
+    display: none;
+  }
+  .trailer-icon {
+    display: block;
+    margin-bottom: 0;
+  }
+  video {
+    width: 100%;
+  }
+}
+.sec2 {
+  background: url("../img/syn.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  box-shadow: -30px 0 70px 30px #000 inset;
+}
+#start-section {
+  background: black;
+}
+.bcg {
+  background-image: url('../img/hbg.jpg');
+  background-color: #f5f5f5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+#synopsis-section {
+  background-image: url("../img/synopsisbg.jpg");
+}
+#credits-section {
+  background-image: url("../img/creditsbg.png");
+}
+#tickets-section {
+  background-image: url("../img/ticketsbg.jpg");
+}
+.logolink {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* Slide 1 */
+/* Slide 2 */
+#slide-2 .bcg {
+  background-image: url('../img/hbg.jpg');
+}
+#slide-2 h2,
+#slide-3 h2 {
+  color: #ffffff;
+}
+#slide-3 p,
+#slide-3 p {
+  color: #b2b2b2;
+}
+/* Slide 3 */
+#slide-3 .bcg {
+  background-image: url('../img/img_earth2.jpg');
+}

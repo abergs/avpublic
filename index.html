@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Avicii | True Stories | Official Movie Site</title>
+    <link rel="icon" href="favicon.ico?v1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The documentary film AVICII: TRUE STORIES traces the unvarnished truth behind the success of Grammy-nominated producer, songwriter and artist Avicii (A.K.A. Tim Bergling)" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body class="body">
+    <div id="logo" data-100="opacity:1;" data-500="opacity:0; ">
+        <a href="http://avicii.com/" class="logolink" target="_blank"></a>
+    </div>
+    <div id="logo-white" data-300="opacity:0;" data-500="opacity:1;">
+        <a href="http://avicii.com/" class="logolink" target="_blank"></a>
+    </div>
+    <div id="menu">
+        <ul data-start="color:rgb(100,100,100); border-color:rgb(100,100,100)" data-500="color:rgb(255,255,255); border-color:rgb(255,255,255)">
+            <li id="home-link"><a href="#start-section">HOME</a></li>
+            <li><a href="#trailer-section" id="">TRAILER</a></li>
+            <!--<li><a href="#synopsis-section" id="">SYNOPSIS</a></li>
+            <li><a href="#credits-section" id="">CREDITS</a></li>-->
+        </ul>
+    </div>
+    <div id="mobile-nav-btn"></div>
+    <div id="mobile-nav">
+        <img src="img/close.png" class="close" alt="close menu" width="32" height="32">
+        <ul>
+            <li><a href="#trailer-section" id="">PLAY TRAILER</a></li>
+            <!--<li><a href="#synopsis-section" id="">SYNOPSIS</a></li>
+            <li><a href="#credits-section" id="">CREDITS</a></li>-->
+        </ul>
+    </div>
+    <!--<div id="cta"
+         data-start="color:rgb(255,255,255); background-color:rgb(51,51,51)"
+         data-500="color:rgb(100,100,100); background-color:rgb(255,255,255)">
+         <a href="#tickets-section" id="">BUY TICKETS</a></div>-->
+    
+    <div id="social">
+        <span>#aviciitruestories</span>
+        <a href="https://www.facebook.com/avicii/" target="_blank"><img src="../img/fb-black.png" /><img src="../img/fb-w.png" class="social-white"  data-100="opacity:0;" data-500="opacity:1; " /></a>
+        <a href="https://www.instagram.com/avicii/?hl=en" target="_blank"><img src="../img/ig.png" /><img src="../img/ig-w.png" class="social-white"  data-100="opacity:0;" data-500="opacity:1; "/></a>
+        <a href="https://twitter.com/avicii?lang=en" target="_blank"><img src="../img/twitter.png" /><img src="../img/twitter-w.png" class="social-white"  data-100="opacity:0;" data-500="opacity:1; "/></a>
+    </div>
+    <!-- Slide 1 - Cloud image -->
+    <section id="start-section" class="fp">
+        <div class="bcg" data-start="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-100p="opacity: 0; width: 256%; height: 356%; top: -256%; left: -78%;"
+            data-anchor-target="#start-section"></div>
+    </section>
+
+    <div id="skrollr-body">
+        <section id="trailer-section" class="fp">
+            <div class="plaxEl" data-start="opacity: 0;" data-80p="opacity: 0;" data-100p="opacity: 1;top:0;" data-anchor-target="#start-section">
+                <div class="playbtn" id="playbtn"
+                    data-40p="transform:scale(0);"
+                    data-100p="transform:scale(1);"
+                ><img src="img/white-play.png" alt="play trailer"  class="trailer-icon" /><span class="trailer-text">PLAY TRAILER</span></div>
+                <video src="t2.mp4" id="trailer" class="trailerplayer" controls controlsList="nodownload"></video>
+            </div>
+        </section>
+
+        <!--<section class="black-space"></section>
+        <section id="synopsis-section" class="sec2"></section>
+        <section id="credits-section" class="sec2"></section>
+        <section id="tickets-section" class="sec2"></section>-->
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/skrollr.menu.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
