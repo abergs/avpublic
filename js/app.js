@@ -8,9 +8,9 @@ var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
     //isMobile = true;
     if(isMobile) {
          //$("#home-link").hide();
-         $("#mobile-nav-btn").show();
+         $(".mobile-nav-btn").show();
          $("#cta, #menu").hide();
-         $("#mobile-nav-btn").on("click", function () {
+         $(".mobile-nav-btn").on("click", function () {
              $("#mobile-nav").show();
          });
 

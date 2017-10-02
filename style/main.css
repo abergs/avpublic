@@ -21,7 +21,7 @@
 #logo-white {
   background-image: url("../img/logo-white.png");
 }
-#mobile-nav-btn {
+.mobile-nav-btn {
   position: fixed;
   right: 20px;
   top: 20px;
@@ -32,6 +32,10 @@
   background-size: 48px 22px;
   display: none;
   z-index: 101;
+}
+.mobile-nav-btn.white {
+  background: url(../img/menu-white.png) no-repeat center center;
+  background-size: 48px 22px;
 }
 #mobile-nav {
   height: 100vh;
@@ -122,9 +126,6 @@
 .fp {
   width: 100vw;
   height: 100vh;
-}
-.black-space {
-  height: 50vh;
 }
 .plaxEl {
   width: 100vw;
@@ -219,6 +220,109 @@
   margin: 0 7px;
   position: relative;
 }
+.sec2 {
+  background: url("../img/syn.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+  box-shadow: -30px 0 70px 30px #000 inset;
+}
+#start-section {
+  background: black;
+}
+.bcg {
+  background-image: url('../img/hbg2.jpg');
+  background-color: #f5f5f5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.tickets-btn {
+  color: white;
+  padding: 15px 25px;
+  border: 1px solid white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tickets-btn:hover {
+  background: white;
+  color: black;
+}
+#synopsis-section {
+  background-image: url("../img/av5.jpg");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#synopsis-section .darkoverlay {
+  display: none;
+}
+#synopsis-section .synopsis {
+  z-index: 3;
+  position: relative;
+  max-width: 700px;
+  padding: 40px;
+  padding-bottom: 80px;
+}
+#synopsis-section .synopsis .syn-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#synopsis-section .synopsis .syn-title h2 {
+  text-align: center;
+}
+#synopsis-section .synopsis h1 {
+  font-size: 3em;
+  margin-bottom: 0px;
+  text-align: center;
+}
+@media only screen and (max-width: 760px) {
+  #synopsis-section .synopsis h1 {
+    font-size: 2.1em;
+  }
+}
+#synopsis-section .synopsis h2 {
+  text-align: center;
+  font-size: 1.38em;
+  margin-bottom: 70px;
+}
+#synopsis-section .synopsis h3 {
+  margin-top: 40px;
+}
+#synopsis-section .synopsis a,
+#synopsis-section .synopsis a:visited {
+  color: white;
+}
+#credits-section {
+  background-image: url("../img/creditsbg.png");
+}
+#tickets-section {
+  background-image: url("../img/av1.jpg");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.logolink {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.press {
+  display: flex;
+  justify-content: space-evenly;
+}
 @media only screen and (max-width: 760px) {
   #social {
     display: flex;
@@ -241,44 +345,9 @@
   video {
     width: 100%;
   }
-}
-.sec2 {
-  background: url("../img/syn.jpg") no-repeat center center;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  color: white;
-  box-shadow: -30px 0 70px 30px #000 inset;
-}
-#start-section {
-  background: black;
-}
-.bcg {
-  background-image: url('../img/hbg2.jpg');
-  background-color: #f5f5f5;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-#synopsis-section {
-  background-image: url("../img/synopsisbg.jpg");
-}
-#credits-section {
-  background-image: url("../img/creditsbg.png");
-}
-#tickets-section {
-  background-image: url("../img/ticketsbg.jpg");
-}
-.logolink {
-  display: block;
-  width: 100%;
-  height: 100%;
+  .syn-title h1 {
+    font-size: 2.1em;
+  }
 }
 /* Slide 1 */
 /* Slide 2 */

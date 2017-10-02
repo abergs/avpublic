@@ -1,4 +1,5 @@
 @bgfade :#f5f5f5;
+@mobile : ~"only screen and (max-width: 760px)";
 
 .body {
     background: black;
@@ -27,7 +28,7 @@
     background-image:url("../img/logo-white.png");
 }
 
-#mobile-nav-btn {
+.mobile-nav-btn {
     position:fixed;
     right:20px;
     top:20px;
@@ -42,6 +43,10 @@
     display:none;
     z-index:101;
     
+    &.white {
+        background:url(../img/menu-white.png) no-repeat center center;
+        background-size: 48px 22px;
+    }
 }
 
 #mobile-nav {
@@ -160,7 +165,7 @@
 }
 
 .black-space {
-    height: 50vh;
+    //height: 50vh;
 }
 
 .plaxEl {
@@ -281,8 +286,136 @@
     }
 }
 
+.sec2 {
+    background: url("../img/syn.jpg") no-repeat center center;
+    background-size: cover;
+    //background-attachment: fixed;
+    width:100vw;
+    min-height:100vh;
+    color:white;
+    box-shadow: -30px 0 70px 30px #000 inset;
+}
 
-@media only screen and (max-width: 760px) {
+#start-section {
+    background:black;
+}
+
+
+.bcg {
+    background-image:url('../img/hbg2.jpg');
+    background-color: @bgfade;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.tickets-btn {
+    color: white;
+    padding: 15px 25px;
+    border: 1px solid white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background:white;
+        color:black;
+    }
+}
+
+
+#synopsis-section {
+    background-image: url("../img/av5.jpg");
+    position:relative;
+
+    .darkoverlay {
+        display: none;
+    }
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .synopsis {
+        z-index:3;
+        position: relative;
+        max-width:700px;
+        padding:40px;
+        padding-bottom:80px;
+
+        .syn-title {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            //line-height: 0em;
+            margin-bottom:0px;
+            text-align:center;
+
+            @media @mobile {
+                font-size:2.1em;
+            }
+        }
+
+        h2 {
+            text-align:center;
+            font-size:1.38em;
+            margin-bottom:70px;
+        }
+
+        h3 {
+            margin-top:40px;    
+        }
+
+        a, a:visited {
+            color:white;
+        }
+    }
+}
+
+#credits-section {
+    background-image: url("../img/creditsbg.png");
+}
+
+#tickets-section {
+    background-image: url("../img/av1.jpg");
+    display: flex;
+    justify-content: center;
+    //height: 50vh;
+    //min-height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    //padding:120px 0;
+}
+
+.logolink {
+    display: block;
+    width:100%;
+    height:100%;
+}
+
+.press {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+@media @mobile {
     #social {
         display:flex;
         right:20px;
@@ -307,57 +440,11 @@
         width: 100%;
     }
 
+    .syn-title h1 {
+        font-size: 2.1em;
+    }
+
 }
-
-// sec2
-.sec2 {
-    background: url("../img/syn.jpg") no-repeat center center;
-    background-size: cover;
-    //background-attachment: fixed;
-    width:100vw;
-    height:100vh;
-    color:white;
-    box-shadow: -30px 0 70px 30px #000 inset;
-}
-
-#start-section {
-    background:black;
-}
-
-
-.bcg {
-    background-image:url('../img/hbg2.jpg');
-    background-color: @bgfade;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
-
-
-#synopsis-section {
-    background-image: url("../img/synopsisbg.jpg");
-}
-
-#credits-section {
-    background-image: url("../img/creditsbg.png");
-}
-
-#tickets-section {
-    background-image: url("../img/ticketsbg.jpg");
-}
-
-.logolink {
-    display: block;
-    width:100%;
-    height:100%;
-}
-
 
 /* Slide 1 */
 .bcg {}
